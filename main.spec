@@ -5,7 +5,6 @@ a = Analysis(
     ['src\\main.py'],
     pathex=[],
     binaries=[],
-    datas=[('tessdata', 'tessdata')],
     hiddenimports=['pytesseract', 'cv2', 'PIL'],
     hookspath=[],
     hooksconfig={},
@@ -22,7 +21,7 @@ exe = EXE(
     a.binaries,
     a.datas,
     [],
-    name='main',
+    name='Text Extractor',
     debug=False,
     bootloader_ignore_signals=False,
     strip=False,
@@ -35,4 +34,5 @@ exe = EXE(
     target_arch=None,
     codesign_identity=None,
     entitlements_file=None,
+    icon='assets/icon.png'
 )
